@@ -3,8 +3,11 @@
 public class Trainer{
     public string Listen(Animal[] animals) {
         public string sounds = "";
-
-        public abstract string Say();
+        foreach(Animal animal in animals){
+            public abstract string Say();
+            sounds += Say();
+        }
+        
         return sounds;
     }
 }
@@ -30,6 +33,7 @@ public class Bird  : Animal{
         return "chirp";
     }
 }
+
 
 
 
