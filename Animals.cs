@@ -4,7 +4,6 @@ public class Trainer{
     public string Listen(Animal[] animals) {
         public string sounds = "";
 
-        animals = Say() + sounds;
         public abstract string Say();
         return sounds;
     }
@@ -31,6 +30,7 @@ public class Bird  : Animal{
         return "chirp";
     }
 }
+
 
 
 
