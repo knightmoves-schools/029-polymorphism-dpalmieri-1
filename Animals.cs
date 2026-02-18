@@ -2,7 +2,7 @@
 
 public class Trainer{
     public string Listen(Animal[] animals) {
-        string sounds = "";
+        string sounds = ", ";
         foreach(Animal animal in animals){
             sounds += animal.Say();
         }
@@ -32,6 +32,7 @@ public class Bird  : Animal{
         return "chirp";
     }
 }
+
 
 
 
